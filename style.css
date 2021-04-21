@@ -10,12 +10,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #a8cee49f;
 }
 
 #board {
   display: flex;
   flex-direction: column;
   background: url('./img/decord.png') center / cover no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+  zoom: 150%;
+  overflow: hidden;
 }
 
 .row {
@@ -25,7 +30,7 @@ body {
 .cell {
   width: 70px;
   height: 70px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.109);
 }
 
 .player {
