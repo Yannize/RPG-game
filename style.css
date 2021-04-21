@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  background: url('./img/decord.png') center / cover no-repeat;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.player {
+  background: url('./img/sprite.png');
+  background-size: 91%;
+}
+
+.right {
+  background-position: 2px 140px;
+}
+
+.left {
+  background-position: 5px 210px;
+}
+
+.top {
+  background-position: 2px 70px;
+}
+
+.bottom {
+  background-position: 2px 280px;
+}
+
+.targetCell {
+  background: url('./img/chest.png') center / contain no-repeat;
+}
+
+.compteur {
+  position: absolute;
+  top: 20px;
+  font-size: 20px;
+  color: rgb(71, 71, 71);
+}
